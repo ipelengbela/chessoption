@@ -6,10 +6,10 @@
 =============================================*/
 
 :root {
-  --link-color: rgb(0,0,0);
+  --link-color: rgb(145, 128, 112);
   --logo-color: rgba(145, 128, 112, 0.6);
   --primary-color: rgb(13, 12, 10);
-  --secondary-color: rgba(13,12,10,0.7);
+  --secondary-color: rgba(13, 12, 10, 0.7);
   --primary-font: "Roboto", sans-serif;
   --background-color: rgba(0, 0, 0, 0.7);
 }
@@ -92,7 +92,7 @@ z-index:999;}
 
 .nav-item{
 	font-size: 2rem;
-	color:#2b2b2b;
+	color: var(--link-color);
 	height: 100%;
 	padding:0 0.4rem;
 	text-align:center;

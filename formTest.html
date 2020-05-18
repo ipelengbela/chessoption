@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+            <title>
+                // Form Popup Test //
+            </title>
+
+            <link rel="stylesheet" href="formTest.css">
+        </head>
+
+        <body>
+            <div id="div-container">
+                <div id="sub-container">
+                    <p id="line-name">Name</p>
+                    <p id="line-description" style="word-wrap:break-word">Description</p>
+                    <p id="line-status">Status</p>
+                    <p id="line-color-tag">Color of Tag</p>
+                    <p id="line-tag">Tag</p>
+                </div>
+            </div>
+
+            <div id="div-container">
+                <button id="openPopup" type="button">
+                    Open Form
+                </button>
+            </div>
+
+            <div class="popup-Background" id="popupBackground">
+                <div class="form-box">
+                    <p class="form-label" style="font-size: 2em; text-align: center">Form Information</p>
+                    <div class="form form-optional form-has-character-limit">
+                        <label class="form-label" for="input-name">Name</label>
+                        <div class="text-help character-count">50</div>
+                        <input type="text" maxlength="50" class="form-input" id="input-name">
+                        <small class="text-help">Maximum of 50 characters.</small>
+                    </div>
+                    <div class="form form-optional">
+                        <label class="form-label" for="status-dropdown">Status</label>
+                        <select class="form-input" id="status-dropdown">
+                            <option value="To-Do">To-Do</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Done">Done</option>
+                        </select>
+                        <small class="text-help"></small>
+                    </div>
+                    <div class="form form-optional form-has-character-limit">
+                        <label class="form-label" for="input-tag">Tag</label>
+                        <div class="text-help character-count">30</div>
+                        <input type="text" maxlength="30" class="form-input" id="input-tag">
+                        <small class="text-help">Tags help to group tasks together.</small>
+                    </div>
+                    <div class="form form-optional">
+                        <label class="form-label" for="input-tag-colour">Colour of Tag</label>
+                        <select class="form-input" id="input-tag-colour">
+                            <option value="choice">--Choose Colour--</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="lgreen">Light Green</option>
+                            <option value="orange">Orange</option>
+                            <option value="lorange">Light Orange</option>
+                        </select>
+                        <small class="text-help">Will only have an effect if using a tag.</small>
+                    </div>
+                    <div class="form form-optional form-has-character-limit">
+                        <label class="form-label" for="input-description">Description</label>
+                        <div class="text-help character-count">80</div>
+                        <textarea wrap="soft" rows="4" maxlength="80" class="form-input" id="input-description" style="min-height: 42px; max-height: 230px; max-width: 94%"></textarea>
+                        <small class="text-help"></small>
+                    </div>
+                    <div class="form-footer">
+                        <button type="button" id="save">
+                            Save Task
+                        </button>
+                        <button type="button" id="hidePopup">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <script src="formTest.js"></script>
+        </body>
+    </html>

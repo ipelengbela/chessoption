@@ -1,14 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
-    
 <head>
-<script type="text/javascript">
-	
-	function chessbalance(){
-	    var balance = "";
-	}
-	</script>
-    <title>Chess Option - Earn Money By Playing Chess Online</title>
+    <title>Chess Option - Earn Money By Playing Chess</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -17,8 +10,6 @@
     <link rel="stylesheet" href="css/style.css"/>
    <link rel="stylesheet" href="style.css">
    <style>img[alt="www.000webhost.com"]{display:none;}</style>
-   
-
 </head>
 
 <script src="app.js"></script>
@@ -28,22 +19,19 @@
             <div class="logo">
                 <h1 style="color:white; font-family:'Agency FB'; padding-top:5%;">Chess Option</h1>
             </div>
-            <nav class="navbar" id="navbar" background-color:#000;>
+            <nav class="navbar" id="navbar">
                 <ul class="nav-list">
                     <li class="nav-item home">
                         <a href="#">Home</a>
                     </li>
                     <li class="nav-item about">
-                        <a href="#">Login</a>
+                        <a href="login.html">Login</a>
                     </li>
                     <li class="nav-item contact">
-                        <a href="#">Deposit</a>
-                    </li>
-                    <li class="nav-item contact">
-                        <a href="#">Withdraw</a>
+                        <a href="#">Register</a>
                     </li>
                     <li class="nav-item livres">
-                        <a href="#">Tournaments <span id="ipeleng"></span></a>
+                        <a href="#">Tournaments</a>
                     </li>
                 </ul>
             </nav>
@@ -64,57 +52,15 @@
 
 
         <div id="container"></div>
-<p id="chessbalance" style="display:none;"></p>
-        <input type="number" placeholder="$" style="margin:0.5% 0.4%; height:20px;" value="1" id="input"/> <span id="buttonz"style="color:white; font-style:bold; font-weight:600"> <button onclick="myFunction()" style="background-color: #4CAF50 ; /* Green */ border: none; color: white; padding: 6px 32px; text-align: center; text-decoration: none; display: inline-block;">Bet</button> <button style="background-color:red; /* Green */ border: none; color: white; padding: 6px 32px; text-align: center; text-decoration: none; display: inline-block;"onclick="abort ()">Abort</button> <span id="amount"> Demo [ $1000 ]</span> </span>
-        <p style="color:white; margin:1px 0px; font-weight:900" id="">&nbsp;<span id="players"> | </span> <span id="status">Status : Play</span></p>
+
+        <input type="number" placeholder="$" style="margin:0.5% 0.4%; height:20px;" /> <span style="color:white; font-style:bold; font-weight:600"> <button style="background-color: red; /* Green */ border: none; color: white; padding: 6px 32px; text-align: center; text-decoration: none; display: inline-block;" onclick="names()">bet</button> <button style="background-color: #4CAF50; /* Green */ border: none; color: white; padding: 6px 32px; text-align: center; text-decoration: none; display: inline-block;">abort</button> Demo ( $1000 )</span>
+        <p style="color:white; margin:1px 0px; font-weight:900" id="">&nbsp;<span id="players"> | </span> <span id="status"> Status : Play</span></p>
         <script type="text/javascript" src="js/main.js"></script>
-        <script src="index.js">
-        
-        </script>
+        <script src="index.js"></script>
 
 </body>
-
-
-<script>
-function abort(){
- let balance;
- var newbalance;
-window.location.reload(false); 
-abortchess();
-    
-}
-function myFunction() {
-    var input = document.getElementById("input").value;
-    var win = document.getElementById("status").innerHTML;
-    
-if (win === "Status : You Lost"){
-    alert ("checkmate you lost raised");
-     balance = newbalance;
-}
-else {
-    alert("chess bet proceeded");
-    balance = "1000";
-}
-    
-    
-
-let bet = input;
-
-newbalance = balance-bet;
-var dollar = document.getElementById ("amount");
-
-
-document.getElementById("amount").innerHTML = "Demo [ $"+newbalance+" ]";
-}
-</script>
-
-
 <script type="text/javascript" src="js/register-pop.js"></script>
-  
 <style>
-
-
-
 
 @media screen and (max-width: 768px){
     #footer{background-color: black;
@@ -126,6 +72,6 @@ document.getElementById("amount").innerHTML = "Demo [ $"+newbalance+" ]";
     overflow: hidden; }}
 </style>
 <footer id="footer" class="foot">
-<p style="color:white; text-align:center; padding-top:1.5%"><a href="http://chessoption.000webhostapp.com/chessoption/index.html"  target="_blank">©  Ipeleng Software Solution (Pty) Ltd</a></p>
+<p style="color:white; text-align:center; padding-top:1.5%">© 2019 Chess Option Broker Inc</p>
 </footer>
 </html>
