@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Chess Option - Earn Money By Playing Chess</title>
+    <title>Chess Option - Login or Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css"/>
    <link rel="stylesheet" href="style.css">
    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+   
+
 </head>
 
 <script src="app.js"></script>
@@ -17,9 +19,9 @@
     <div class="contain">
         <header>
             <div class="logo">
-                <h1 style="color:white; font-family:'Agency FB'; padding-top:5%;">Chess Option</h1>
+               <a href="index.html"><h1 style="color:white; font-family:'Agency FB'; padding-top:5%;">Chess Option</h1></a>
             </div>
-            <nav class="navbar" id="navbar">
+            <nav class="navbar" id="navbar" background-color:#000;>
                 <ul class="nav-list">
                     <li class="nav-item home">
                         <a href="index.html">Home</a>
@@ -28,14 +30,13 @@
                         <a href="#">Login</a>
                     </li>
                     <li class="nav-item contact">
-                        <a href="#">Deposit</a>
+                        <a href=Deposit.html>Deposit</a>
                     </li>
-                    <li class="nav-item livres">
+                    <li class="nav-item contact">
                         <a href="#">Withdraw</a>
                     </li>
-                    
-                        <li class="nav-item livres">
-                        <a href="#">Winners</a>
+                    <li class="nav-item livres">
+                        <a href="#">Tournaments</a>
                     </li>
                 </ul>
             </nav>
@@ -49,37 +50,62 @@
             <link rel="stylesheet" href="css/popup.css" type="text/css" media="screen" />
 
             <script type="text/javascript" src="js/jquery.js"></script>
-            <script type="text/javascript" src="js/jquery.cookie.js"></script>
-            <style >
-                #login button{
-                    padding:1% 3%;
-                    margin:1%;
-                }
-                #login-text {
-                    margin:3% 0;
-                }
-                #login input {
-                    padding: 1% 3%;
-                }
-                #login h3 {
-                    font-size:30px;
-                }
-            </style>
-        </header>
-        <div style="text-align:center; padding:5% 0%;" id="login">
-        <h3 style="color:#f1f1f1; padding:-40% 0%;" id="login-text">Login</h3>
-        <p style="color:#f8f8f8;">Username</p>
-        <input type="text" placeholder="Email Address" />
-        <p style="color:#f8f8f8">Password</p>
-        <input type="text" placeholder="Password" />
-
-        <div style="margin:0% 10%;"><a href="index.html"><button style="">Login</button></a><a href="Register.html"><button>Register</button></a></div>
-            <p style="color:#f2f2f2;"><a href="#">Forgot Password</a></p>
     
-        </divp
+            <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        </header>
+        
+
+
+    
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="index.js">
+        
+        </script>
+        <style>
+            #login {
+                margin:10% 0;
+                width:100%;
+            }
+            #login input {
+        width:100%;
+        height:30px;
+        text-align:center;
+            }
+            #login button {
+                text-align:center;
+                padding:2%;
+                margin:1% 0;
+            }
+        </style>
+    <div id="login">
+        <h2 style="color:#f1f1f1; text-align:center; padding:8%;"> Log in </h2>
+<input type="text" placeholder=" Email Address"
+/><p><input type="password" placeholder="Password"/></br><button onclick="window.location.href='Real_account/index.html'"
+> Log in</button>&nbsp;<button onclick="window.location.href='Register.html'">Register</button></p><p style="color:#f1f1f1; text-align:center; padding:5% 0; " onclick="window.location.href='login2.html'">Forgotten password?</p>
+</div>
 </body>
+<script>
+function abort(){
+    
+window.location.reload(false); 
+abortchess();
+    
+}
+function myFunction() {
+
+
+document.getElementById("amount").innerHTML = "Demo [ $999 ]";
+}
+</script>
+
+
 <script type="text/javascript" src="js/register-pop.js"></script>
+  
 <style>
+
+
+
 
 @media screen and (max-width: 768px){
     #footer{background-color: black;
@@ -91,6 +117,6 @@
     overflow: hidden; }}
 </style>
 <footer id="footer" class="foot">
-<p style="color:white; text-align:center; padding-top:1.5%">© Ipeleng Software Solution</p>
+<p style="color:white; text-align:center; padding-top:1.5%">©   Ipeleng Software Solution (Pty) Ltd</p>
 </footer>
 </html>
